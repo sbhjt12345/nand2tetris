@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfe445ea-0ffe-4617-9f9d-f7c38ee2d7f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CodeWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flipper.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterspider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../twitterspider/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bfe445ea-0ffe-4617-9f9d-f7c38ee2d7f6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +84,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
-    <option name="y" value="228" />
+    <option name="x" value="70" />
+    <option name="y" value="23" />
     <option name="width" value="1284" />
     <option name="height" value="810" />
   </component>

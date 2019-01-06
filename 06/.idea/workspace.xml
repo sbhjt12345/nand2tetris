@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c455710-4c3f-43da-8f7e-08927a199043" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flipper.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitterspider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../twitterspider/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3c455710-4c3f-43da-8f7e-08927a199043" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
