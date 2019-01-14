@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfe445ea-0ffe-4617-9f9d-f7c38ee2d7f6" name="Default Changelist" comment="" />
+    <list default="true" id="bfe445ea-0ffe-4617-9f9d-f7c38ee2d7f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/CodeWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,35 +34,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2226" />
+          <entry key="py" value="4291" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2226" />
+          <entry key="Python" value="4291" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state relative-caret-position="453">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="-106">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               <folding>
-                <marker date="1546789522279" expanded="true" signature="306:313" ph="..." />
-                <marker date="1546789522279" expanded="true" signature="391:415" ph="..." />
+                <marker date="1547464697698" expanded="true" signature="586:591" ph="..." />
+                <marker date="1547464697698" expanded="true" signature="653:826" ph="..." />
+                <marker date="1547464697698" expanded="true" signature="2401:3953" ph="..." />
+                <marker date="1547464697698" expanded="true" signature="5881:6082" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,13 +85,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Parser.py" />
         <option value="$PROJECT_DIR$/CodeWriter.py" />
+        <option value="$PROJECT_DIR$/Parser.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
+    <option name="x" value="31" />
     <option name="y" value="23" />
     <option name="width" value="1284" />
     <option name="height" value="810" />
@@ -142,7 +149,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="228" width="1284" height="810" extended-state="0" />
+    <frame x="31" y="23" width="1284" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />
@@ -168,21 +175,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Parser.py">
+    <entry file="file://$PROJECT_DIR$/CodeWriter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="-106">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <marker date="1547464697698" expanded="true" signature="586:591" ph="..." />
+            <marker date="1547464697698" expanded="true" signature="653:826" ph="..." />
+            <marker date="1547464697698" expanded="true" signature="2401:3953" ph="..." />
+            <marker date="1547464697698" expanded="true" signature="5881:6082" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeWriter.py">
+    <entry file="file://$PROJECT_DIR$/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding>
-            <marker date="1546789522279" expanded="true" signature="306:313" ph="..." />
-            <marker date="1546789522279" expanded="true" signature="391:415" ph="..." />
-          </folding>
+        <state relative-caret-position="453">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>

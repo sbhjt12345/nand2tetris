@@ -1,0 +1,378 @@
+@17
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@17
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL1
+D;JEQ
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL2
+0;JMP
+(EQTRUELABEL1)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL2)
+
+@17
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@16
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL3
+D;JEQ
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL4
+0;JMP
+(EQTRUELABEL3)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL4)
+
+@16
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@17
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL5
+D;JEQ
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL6
+0;JMP
+(EQTRUELABEL5)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL6)
+
+@892
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@891
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL7
+D;JLT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL8
+0;JMP
+(EQTRUELABEL7)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL8)
+
+@891
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@892
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL9
+D;JLT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL10
+0;JMP
+(EQTRUELABEL9)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL10)
+
+@891
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@891
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL11
+D;JLT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL12
+0;JMP
+(EQTRUELABEL11)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL12)
+
+@32767
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@32766
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL13
+D;JGT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL14
+0;JMP
+(EQTRUELABEL13)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL14)
+
+@32766
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@32767
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL15
+D;JGT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL16
+0;JMP
+(EQTRUELABEL15)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL16)
+
+@32766
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@32766
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+D = M - D
+@EQTRUELABEL17
+D;JGT
+@SP
+A = M - 1
+M = 0
+@EQAFTERLABEL18
+0;JMP
+(EQTRUELABEL17)
+@SP
+A = M - 1
+M = -1
+(EQAFTERLABEL18)
+
+@57
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@31
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@53
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+M = M + D
+
+@112
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+M = M - D
+
+@SP
+A = M - 1
+M = -M
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+M = D&M
+
+@82
+D=A
+@SP
+A=M
+M=D
+@SP
+M=M+1
+
+@SP
+AM = M - 1
+D = M
+A = A - 1
+M = D|M
+
+@SP
+A = M - 1
+M = !M
+

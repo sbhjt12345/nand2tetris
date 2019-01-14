@@ -35,23 +35,6 @@ class Parser:
         type = self.command.split(' ')[0]
         return self.cType[type]
 
-    def arg1(self):
-        arg_list = self.command.split(' ')
-        if self.commandType() == 'C_ARITHMETIC':
-            return arg_list[0]
-        else:
-            raise Exception('Not allowed')
-
-    def arg2(self):
-        arg_list = self.command.split(' ')
-        if (self.commandType() == 'C_PUSH' or
-                self.commandType() == 'C_POP' or
-                self.commandType() == 'C_FUNCTION' or
-                self.commandType() == 'C_CALL'):
-            return int(arg_list[2])
-        else:
-            raise Exception('Not allowed')
-
 
 
 
