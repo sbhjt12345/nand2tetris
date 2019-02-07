@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3c455710-4c3f-43da-8f7e-08927a199043" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/project7.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/project7.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +17,7 @@
     <session id="522649617">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.opened" value="2" />
@@ -67,7 +68,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="156" />
     <option name="y" value="26" />
     <option name="width" value="1284" />
@@ -128,7 +129,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="156" y="26" width="1284" height="810" extended-state="1" />
+    <frame x="156" y="26" width="1284" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />

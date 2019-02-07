@@ -4,7 +4,7 @@
     <list default="true" id="8e32f636-c684-4bd6-baf2-f9d4f2e9f86f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/CodeWriter.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../07_VMcodeToASM/Parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +17,7 @@
     <session id="-1663011526">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.24" value="1" />
@@ -154,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="805" />
@@ -394,8 +394,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24326241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
