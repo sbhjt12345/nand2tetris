@@ -26,7 +26,7 @@ class CodeWriter:
         res += ('@256\n' +
                 'D=A\n' +
                 '@SP\n' +
-                'M=D' +
+                'M=D\n' +
                 self.write_call('call Sys.init 0'))
         return res
 
@@ -38,10 +38,10 @@ class CodeWriter:
         return res
 
     def write_goto(self, command):
+        print(command)
         res = ''
         addr = self.vm_file.split('/')
         label_name = command.split(' ')[1]
-        print("the command is :" + command + ", and the label name is " + label_name)
         res += '@' + addr[len(addr) - 1].replace('.vm', '$' + label_name) + '\n0;JMP\n'
         print(res)
         return res
@@ -54,14 +54,14 @@ class CodeWriter:
                 'AM=M-1\n' +
                 'D=M\n' +
                 '@' + addr[len(addr) - 1].replace('.vm', '$' + label_name) + '\n' +
-                'D;JGT\n')
+                'D;JNE\n')
         return res
 
     def write_function(self, command):
         res = ''
         addr = self.vm_file.split('/')
         function_elements = command.split(' ')
-        res += '(' + function_elements[1] + ')\n'
+        res += '(' + addr[len(addr) - 1].replace('.vm', '$' + function_elements[1]) + ')\n'
         k = int(function_elements[2])
         tmp_command = 'push constant 0'
         for i in range(0, k):
@@ -80,7 +80,7 @@ class CodeWriter:
                            'M=M+1\n')
         return_address = self.write_label('label RETADD' + call_elements[2])
         return_asm = return_address.replace('(', '').replace(')', '')
-        res += ('@' + return_asm + '\n' +
+        res += ('@' + return_asm +
                 'D=A\n' +
                 push_end_syntax +
                 '@LCL\n' +
@@ -103,6 +103,7 @@ class CodeWriter:
                 '@SP\n' +
                 'D=M\n' +
                 '@LCL\n' +
+                'M=D\n' +
                 self.write_goto('goto ' + call_elements[1]) +
                 return_address
                 )
@@ -322,6 +323,7 @@ class FileTranslator:
     def __init__(self, file_list, file_or_dir_abs_path):
         self.file_list = file_list  # every file in this file list is abs path
         self.file_or_dir_abs_path = file_or_dir_abs_path
+        self.should_init = False
 
     def is_dir(self):
         if self.file_or_dir_abs_path.endswith('.vm'):
@@ -336,7 +338,16 @@ class FileTranslator:
             asm_file = self.file_or_dir_abs_path.replace('.vm', '.asm')
         asm_writer = open(asm_file, 'w')
         for file in self.file_list:
-            self.translate_file(file, asm_writer)
+            ps = Parser(file)
+            if ps.commands[0] == 'function Sys.init 0':
+                vm_trans = CodeWriter(file)
+                asm_writer.write(vm_trans.write_bootstrap())
+                self.translate_file(file, asm_writer)
+        for file in self.file_list:
+            ps = Parser(file)
+            if not ps.commands[0] == 'function Sys.init 0':
+                print("ssssssssssssssssssssss")
+                self.translate_file(file, asm_writer)
         print('its finished!')
         asm_writer.close()
 
