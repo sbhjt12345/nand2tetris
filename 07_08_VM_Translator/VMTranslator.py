@@ -38,12 +38,14 @@ class CodeWriter:
         return res
 
     def write_goto(self, command):
-        print(command)
         res = ''
         addr = self.vm_file.split('/')
         label_name = command.split(' ')[1]
-        res += '@' + addr[len(addr) - 1].replace('.vm', '$' + label_name) + '\n0;JMP\n'
-        print(res)
+        if '.' in label_name:
+            # func_list = label_name.split('.')
+            res += '@' + label_name + '\n0;JMP\n'
+        else:
+            res += '@' + addr[len(addr) - 1].replace('.vm', '$' + label_name) + '\n0;JMP\n'
         return res
 
     def write_if(self, command):
@@ -61,7 +63,11 @@ class CodeWriter:
         res = ''
         addr = self.vm_file.split('/')
         function_elements = command.split(' ')
-        res += '(' + addr[len(addr) - 1].replace('.vm', '$' + function_elements[1]) + ')\n'
+        if '.' in function_elements[1]:
+            # func_list = function_elements[1].split('.')
+            res += '(' + function_elements[1] + ')\n'
+        else:
+            res += '(' + addr[len(addr) - 1].replace('.vm', '$' + function_elements[1]) + ')\n'
         k = int(function_elements[2])
         tmp_command = 'push constant 0'
         for i in range(0, k):
@@ -78,7 +84,8 @@ class CodeWriter:
                            'M=D\n' +
                            '@SP\n' +
                            'M=M+1\n')
-        return_address = self.write_label('label RETADD' + call_elements[2])
+        return_address = self.write_label('label RETADD' + self.get_next_label())
+        # different return address for calling the same function
         return_asm = return_address.replace('(', '').replace(')', '')
         res += ('@' + return_asm +
                 'D=A\n' +
@@ -346,7 +353,6 @@ class FileTranslator:
         for file in self.file_list:
             ps = Parser(file)
             if not ps.commands[0] == 'function Sys.init 0':
-                print("ssssssssssssssssssssss")
                 self.translate_file(file, asm_writer)
         print('its finished!')
         asm_writer.close()

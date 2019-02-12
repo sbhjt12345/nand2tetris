@@ -2,7 +2,7 @@
 D=A
 @SP
 M=D
-@Sys$RETADD0
+@Sys$RETADDLABEL1
 D=A
 @SP
 A=M
@@ -46,10 +46,10 @@ M=D
 D=M
 @LCL
 M=D
-@Sys$Sys.init
+@Sys.init
 0;JMP
-(Sys$RETADD0)
-(Sys$Sys.init)
+(Sys$RETADDLABEL1)
+(Sys.init)
 @4
 D=A
 @SP
@@ -58,7 +58,7 @@ M=D
 @SP
 M=M+1
 
-@Sys$RETADD1
+@Sys$RETADDLABEL1
 D=A
 @SP
 A=M
@@ -102,13 +102,13 @@ M=D
 D=M
 @LCL
 M=D
-@Sys$Main.fibonacci
+@Main.fibonacci
 0;JMP
-(Sys$RETADD1)
+(Sys$RETADDLABEL1)
 (Sys$WHILE)
 @Sys$WHILE
 0;JMP
-(Main$Main.fibonacci)
+(Main.fibonacci)
 @ARG
 D=M
 @0
@@ -246,7 +246,7 @@ D = M
 A = A - 1
 M = M - D
 
-@Main$RETADD1
+@Main$RETADDLABEL3
 D=A
 @SP
 A=M
@@ -290,9 +290,9 @@ M=D
 D=M
 @LCL
 M=D
-@Main$Main.fibonacci
+@Main.fibonacci
 0;JMP
-(Main$RETADD1)
+(Main$RETADDLABEL3)
 @ARG
 D=M
 @0
@@ -318,7 +318,7 @@ D = M
 A = A - 1
 M = M - D
 
-@Main$RETADD1
+@Main$RETADDLABEL4
 D=A
 @SP
 A=M
@@ -362,9 +362,9 @@ M=D
 D=M
 @LCL
 M=D
-@Main$Main.fibonacci
+@Main.fibonacci
 0;JMP
-(Main$RETADD1)
+(Main$RETADDLABEL4)
 @SP
 AM = M - 1
 D = M
