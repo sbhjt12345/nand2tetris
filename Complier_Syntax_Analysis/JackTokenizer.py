@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import re
+import sys
 
 COMMENT_RE = r'(//(.*))|(/\*(.*?)\*/)'
 KEYWORD_RE = r'(class)|(constructor)|(function)|(method)|(field)|(static)|(var)|(int)|' + \
@@ -9,7 +10,7 @@ KEYWORD_RE = r'(class)|(constructor)|(function)|(method)|(field)|(static)|(var)|
 SYMBOL_RE = r'\(|\)|\{|\}|\[|\]|\.|\,|\;|\+|\-|\*|\/|\&|\||\<|\>|\=|\~'
 INTEGER_CONSTANT_RE = r'\d+'
 STRING_CONSTANT_RE = r'"[^("|\n)]*"'
-IDENTIFIER_RE = r'[^\d]\w+'
+IDENTIFIER_RE = r'[^\d]\w*'
 RE_LIST = [KEYWORD_RE, SYMBOL_RE, INTEGER_CONSTANT_RE, STRING_CONSTANT_RE, IDENTIFIER_RE]
 LEXICAL_MAP = {
     KEYWORD_RE: 'keyword',
@@ -26,6 +27,7 @@ class JackTokenizer:
             self.tokens = []
             self.filepath = filepath
             input_file = open(filepath, 'r')
+            multiple_line_comments = False
             for line in input_file.readlines():
                 if line.startswith("/*"):
                     multiple_line_comments = True
@@ -62,12 +64,13 @@ class JackTokenizer:
                 if match_syntax is not None:
                     word = match_syntax.group()
                     if LEXICAL_MAP[regex] == 'stringConstant':
-                        word = word.replace('"','')
+                        word = word.replace('"', '')
                     self.tokens.append((word, LEXICAL_MAP[regex]))
-                    line = line[len(word):]
+                    line = line[len(word):].strip()
 
     def output_t_xml(self):
-        txml = self.filepath.replace('.jack', '.xml')
+        txml = self.filepath.replace('.jack', 'T2.xml')
+        print(txml)
         special_symbol_map = {
             '<': '&lt;',
             '>': '&gt;',
@@ -84,6 +87,18 @@ class JackTokenizer:
             f.write(syntax)
         f.write('</token>\n')
         f.close()
+
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print("enter sth")
+        sys.exit(1)
+
+    filename = sys.argv[1:]
+    print("this is the thing: \n")
+    print(filename)
+    jtk = JackTokenizer(filename[0])
+    jtk.output_t_xml()
 
 
 
