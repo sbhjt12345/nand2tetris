@@ -12,11 +12,11 @@ STRING_CONSTANT_RE = r'"[^("|\n)]*"'
 IDENTIFIER_RE = r'[^\d]\w+'
 RE_LIST = [KEYWORD_RE, SYMBOL_RE, INTEGER_CONSTANT_RE, STRING_CONSTANT_RE, IDENTIFIER_RE]
 LEXICAL_MAP = {
-    KEYWORD_RE: "KEYWORD",
-    SYMBOL_RE: 'SYMBOL',
-    INTEGER_CONSTANT_RE: 'INT_CONST',
-    STRING_CONSTANT_RE: 'STRING_CONST',
-    IDENTIFIER_RE: 'IDENTIFIER'
+    KEYWORD_RE: 'keyword',
+    SYMBOL_RE: 'symbol',
+    INTEGER_CONSTANT_RE: 'integerConstant',
+    STRING_CONSTANT_RE: 'stringConstant',
+    IDENTIFIER_RE: 'identifier'
 }
 
 
@@ -24,6 +24,7 @@ class JackTokenizer:
     def __init__(self, filepath):
         try:
             self.tokens = []
+            self.filepath = filepath
             input_file = open(filepath, 'r')
             for line in input_file.readlines():
                 if line.startswith("/*"):
@@ -60,8 +61,33 @@ class JackTokenizer:
                 match_syntax = re.match(regex, line)  # match matches the start of the string
                 if match_syntax is not None:
                     word = match_syntax.group()
+                    if LEXICAL_MAP[regex] == 'stringConstant':
+                        word = word.replace('"','')
                     self.tokens.append((word, LEXICAL_MAP[regex]))
                     line = line[len(word):]
+
+    def output_t_xml(self):
+        txml = self.filepath.replace('.jack', '.xml')
+        special_symbol_map = {
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            '&': '&amp;'
+        }
+        f = open(txml, 'w')
+        f.write('<token>\n')
+        for token_tuple in self.tokens:
+            if token_tuple[0] in special_symbol_map.keys():
+                syntax = '<%s>' % token_tuple[1] + special_symbol_map[token_tuple[0]] + '</%s>\n' % token_tuple[1]
+            else:
+                syntax = '<%s>' % token_tuple[1] + token_tuple[0] + '</%s>\n' % token_tuple[1]
+            f.write(syntax)
+        f.write('</token>\n')
+        f.close()
+
+
+
+
 
 
 
