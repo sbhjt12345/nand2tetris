@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c455710-4c3f-43da-8f7e-08927a199043" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/JackTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/JackTokenizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/CompilationEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/CompilationEngine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +67,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="156" />
     <option name="y" value="23" />
     <option name="width" value="1284" />
-    <option name="height" value="803" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -131,7 +130,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="156" y="23" width="1284" height="803" extended-state="0" />
+    <frame x="156" y="23" width="1284" height="800" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />

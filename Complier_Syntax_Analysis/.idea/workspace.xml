@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a21e0df5-98ec-4c43-8e00-ae1af3dab2e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JackTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/JackTokenizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilationEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/CompilationEngine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,24 +31,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="962" />
-          <entry key="py" value="3065" />
+          <entry key="Python Console" value="1013" />
+          <entry key="py" value="4042" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4027" />
+          <entry key="Python" value="5055" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+            <state relative-caret-position="321">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#20#29#0" expanded="true" />
                 <marker date="1553074610372" expanded="true" signature="769:774" ph="..." />
@@ -59,14 +58,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="525">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
               <folding>
                 <element signature="e#20#47#0" expanded="true" />
-                <marker date="1553070963049" expanded="true" signature="85:90" ph="..." />
+                <marker date="1553156980597" expanded="true" signature="85:90" ph="..." />
+                <marker date="1553156980597" expanded="true" signature="1174:1220" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,14 +87,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CompilationEngine.py" />
         <option value="$PROJECT_DIR$/JackTokenizer.py" />
+        <option value="$PROJECT_DIR$/CompilationEngine.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="274" />
-    <option name="y" value="23" />
+    <option name="x" value="313" />
+    <option name="y" value="25" />
     <option name="width" value="1284" />
     <option name="height" value="800" />
   </component>
@@ -146,7 +146,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="23" width="1284" height="800" extended-state="0" />
+    <frame x="313" y="25" width="1284" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -172,25 +172,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#20#47#0" expanded="true" />
-            <marker date="1553070963049" expanded="true" signature="85:90" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        <state relative-caret-position="321">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#20#29#0" expanded="true" />
             <marker date="1553074610372" expanded="true" signature="769:774" ph="..." />
             <marker date="1553074610372" expanded="true" signature="1900:1935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#20#47#0" expanded="true" />
+            <marker date="1553156980597" expanded="true" signature="85:90" ph="..." />
+            <marker date="1553156980597" expanded="true" signature="1174:1220" ph="..." />
           </folding>
         </state>
       </provider>
