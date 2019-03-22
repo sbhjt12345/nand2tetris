@@ -32,9 +32,9 @@ class CompilationEngine:
         self.write_next_token()  # symbol {
         while 'static' in self.cur_token or 'field' in self.cur_token:
             self.compile_vardec()
-        while 'constructor' in self.cur_token or \
-            'function' in self.cur_token or \
-            'method' in self.cur_token :
+        while 'constructor' in self.cur_token \
+                or 'function' in self.cur_token \
+                or 'method' in self.cur_token:
             self.compile_subroutinedec()
 
 
@@ -56,12 +56,41 @@ class CompilationEngine:
         self.write_next_token()    # symbol ; cur_token is now next var or class body
         self.write_second_tag('classVarDec')
 
-
     def compile_subroutinedec(self):
         self.write_tag('subroutineDec')
         self.write_next_token()    # keyword cons, method or func
-        self.write_next_token()    # identifier type
-        self.
+        self.write_next_token()    # type
+        self.write_next_token()    # identifier subroutineName
+        self.write_next_token()    # (, now self.token is either ) or type param
+        while ')' not in self.token:
+            self.not_written_yet()
+            self.compile_parameter_list()
+        self.not_written_yet()
+        self.write_next_token()    # write ')'
+        self.write_tag('subroutineBody')
+
+
+
+
+        self.write_second_tag('subroutineBody')
+        self.write_second_tag('subroutineDec')
+
+    def compile_parameter_list(self):
+        self.write_tag('parameterList')
+        self.write_next_token()   # type
+        self.write_next_token()   # identifier param name
+        while ',' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+            self.write_next_token()  # we get cur_token as ',' or ')'
+        self.write_second_tag('parameterList')
+
+
+
+
+
+
+
 
 
 
