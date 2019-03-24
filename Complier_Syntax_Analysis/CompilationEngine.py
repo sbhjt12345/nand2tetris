@@ -31,30 +31,22 @@ class CompilationEngine:
         self.write_next_token()  # identifier className
         self.write_next_token()  # symbol {
         while 'static' in self.cur_token or 'field' in self.cur_token:
-            self.compile_vardec()
+            #self.not_written_yet()   # keep static/field as cur_token
+            self.compile_var_dec('classVarDec')
         while 'constructor' in self.cur_token \
                 or 'function' in self.cur_token \
                 or 'method' in self.cur_token:
+            self.not_written_yet()  # keep the keyword
             self.compile_subroutinedec()
 
-
-
-
-
-
-
-    def compile_vardec(self):
-        self.write_tag('classVarDec')
-        self.write_next_token()    # keyword field or static
-        self.write_next_token()    # type
-        self.write_next_token()    # identifier field name
-        while ',' in self.cur_token:  # now that we read cur_token but havent written it, change self.written to false
+    def compile_var_dec(self, tagname):
+        self.write_tag(tagname)
+        while ';' not in self.cur_token:
             self.not_written_yet()
-            self.write_next_token()  # symbol ,
-            self.write_next_token()  # identifier field name
+            self.write_next_token()
         self.not_written_yet()
-        self.write_next_token()    # symbol ; cur_token is now next var or class body
-        self.write_second_tag('classVarDec')
+        self.write_next_token()
+        self.write_second_tag(tagname)
 
     def compile_subroutinedec(self):
         self.write_tag('subroutineDec')
@@ -68,10 +60,10 @@ class CompilationEngine:
         self.not_written_yet()
         self.write_next_token()    # write ')'
         self.write_tag('subroutineBody')
-
-
-
-
+        self.write_next_token()    # write '{', cur_token is var if var exists
+        while 'var' in self.cur_token:
+            self.compile_var_dec('varDec')  # after this step, we get first word of statement as cur_token
+        self.compile_statements()
         self.write_second_tag('subroutineBody')
         self.write_second_tag('subroutineDec')
 
@@ -84,6 +76,23 @@ class CompilationEngine:
             self.write_next_token()
             self.write_next_token()  # we get cur_token as ',' or ')'
         self.write_second_tag('parameterList')
+
+    def compile_statements(self):
+        if self.cur_token == 'let':
+
+        elif self.cur_token == 'if':
+
+        elif self.cur_token == 'while':
+
+        elif self.cur_token == 'do':
+
+        elif self.cur_token == 'return':
+
+
+
+
+
+
 
 
 
