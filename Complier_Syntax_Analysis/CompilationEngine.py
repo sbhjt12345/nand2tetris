@@ -78,15 +78,103 @@ class CompilationEngine:
         self.write_second_tag('parameterList')
 
     def compile_statements(self):
-        if self.cur_token == 'let':
+        if 'let' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()   # write let, cur_token is varName
+            self.write_next_token()
+            if '[' in self.cur_token:
+                self.not_written_yet()
+                self.write_next_token() # now cur_token is the first in expressions
+                self.compile_expressions()
 
-        elif self.cur_token == 'if':
 
-        elif self.cur_token == 'while':
 
-        elif self.cur_token == 'do':
 
-        elif self.cur_token == 'return':
+        elif 'if' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+
+        elif 'while' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+
+        elif 'do' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+
+        elif 'return' in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+
+    """
+    expression is: term (op term)*
+    """
+    def compile_expressions(self):
+        self.write_tag('expression')
+        self.compile_term()
+        while re.search(r'>(\+|-|\*|/|&amp;|\||&lt;|&gt;|=)<', self.cur_token):
+            self.not_written_yet()
+            self.write_next_token()
+            self.compile_term()
+        self.write_second_tag('expression')
+
+    """
+    term is: integerCons|stringCons|keywordCons|varName|varName '['expression']'|subroutineCall
+    |'('expression')'|unaryOp term
+    unaryOp is '-'
+    subroutineCall is: subroutineName '('expressionList')' | 
+    (className|varName)'.'subroutineName'('expressionList')'
+    expressionList is : (expression(',' expression)*)?
+    """
+    def compile_term(self):
+        self.write_tag('term')
+        self.not_written_yet()
+        if re.search(r'>(~|-)<', self.cur_token):
+            self.write_next_token()  # deal with unary op
+            self.compile_term()
+        elif '(' in self.cur_token:
+            self.write_next_token()   # '('
+            self.compile_expressions()
+            self.write_next_token()
+        else:
+            self.write_next_token()
+            self.not_written_yet()
+            if '[' in self.cur_token():
+                self.write_next_token()
+                self.compile_expressions()
+                self.write_next_token()  # write ']'
+            elif '.' in self.cur_token():
+                self.write_next_token()
+                self.write_next_token()  # subroutineName
+                self.write_next_token()  # '('
+                self.compile_expression_list()
+                self.write_next_token()
+            else:
+                self.write_next_token()
+                self.compile_expression_list()
+                self.write_next_token()
+        self.write_second_tag('term')
+
+    def compile_expression_list(self):
+        self.write_tag('expressionList')
+        self.not_written_yet()
+        if ')' not in self.cur_token:   # meaning expression list is not empty
+            self.compile_expressions()  #TODO find out if it really goes to next token
+        while ')' not in self.cur_token:
+            self.not_written_yet()
+            self.write_next_token()
+            self.compile_expressions()
+        self.write_second_tag('expressionList')
+
+
+
+
+
+
+
+
+
+
 
 
 
