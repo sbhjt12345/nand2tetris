@@ -31,7 +31,6 @@ class JackTokenizer:
             for line in input_file.readlines():
                 if line.startswith("/*"):
                     multiple_line_comments = True
-                    continue
                 if multiple_line_comments:
                     index = line.find('*/')
                     if index == -1:
@@ -66,7 +65,8 @@ class JackTokenizer:
                     if LEXICAL_MAP[regex] == 'stringConstant':
                         word = word.replace('"', '')
                     self.tokens.append((word, LEXICAL_MAP[regex]))
-                    line = line[len(word):].strip()
+                    break
+            line = line[len(word):].strip()
 
     def output_t_xml(self):
         txml = self.filepath.replace('.jack', 'T2.xml')

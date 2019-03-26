@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3c455710-4c3f-43da-8f7e-08927a199043" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/CompilationEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/CompilationEngine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/JackTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/JackTokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/Square/SquareM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/Square/SquareM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Complier_Syntax_Analysis/Square/SquareT2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Complier_Syntax_Analysis/Square/SquareT2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

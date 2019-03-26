@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a21e0df5-98ec-4c43-8e00-ae1af3dab2e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompilationEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/CompilationEngine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JackTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/JackTokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/SquareM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Square/SquareT2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/SquareT2.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,23 +22,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1013" />
-          <entry key="py" value="11690" />
+          <entry key="Python Console" value="1093" />
+          <entry key="py" value="11848" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="12703" />
+          <entry key="Python" value="12941" />
         </counts>
       </usages-collector>
     </session>
@@ -68,12 +67,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            <state relative-caret-position="210">
+              <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
               <folding>
                 <element signature="e#20#29#0" expanded="true" />
-                <marker date="1553589970641" expanded="true" signature="769:774" ph="..." />
-                <marker date="1553589970641" expanded="true" signature="1900:1935" ph="..." />
+                <marker date="1553593085766" expanded="true" signature="769:774" ph="..." />
+                <marker date="1553593085766" expanded="true" signature="1871:1906" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,8 +105,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
-    <option name="y" value="23" />
+    <option name="x" value="135" />
+    <option name="y" value="270" />
     <option name="width" value="1284" />
     <option name="height" value="810" />
   </component>
@@ -159,14 +158,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="23" width="1284" height="810" extended-state="0" />
+    <frame x="63" y="317" width="1284" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.076258995" />
+      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.31654677" />
       <window_info anchor="bottom" id="Terminal" weight="0.32658958" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -204,12 +203,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
           <folding>
             <element signature="e#20#29#0" expanded="true" />
-            <marker date="1553589970641" expanded="true" signature="769:774" ph="..." />
-            <marker date="1553589970641" expanded="true" signature="1900:1935" ph="..." />
+            <marker date="1553593085766" expanded="true" signature="769:774" ph="..." />
+            <marker date="1553593085766" expanded="true" signature="1871:1906" ph="..." />
           </folding>
         </state>
       </provider>
