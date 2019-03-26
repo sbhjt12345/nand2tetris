@@ -77,14 +77,14 @@ class JackTokenizer:
             '&': '&amp;'
         }
         f = open(txml, 'w')
-        f.write('<token>\n')
+        f.write('<tokens>\n')
         for token_tuple in self.tokens:
             if token_tuple[0] in special_symbol_map.keys():
                 syntax = '<%s> ' % token_tuple[1] + special_symbol_map[token_tuple[0]] + ' </%s>\n' % token_tuple[1]
             else:
                 syntax = '<%s> ' % token_tuple[1] + token_tuple[0] + ' </%s>\n' % token_tuple[1]
             f.write(syntax)
-        f.write('</token>\n')
+        f.write('</tokens>\n')
         f.close()
 
 

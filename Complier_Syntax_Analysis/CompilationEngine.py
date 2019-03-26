@@ -24,21 +24,19 @@ class CompilationEngine:
         self.write_tag('class')
         self.write_next_token()  # keyword class
         self.write_next_token()  # identifier className
-        self.write_next_token()  # symbol {
-        self.not_written_yet()
+        self.mix_two()
         while 'static' in self.cur_token or 'field' in self.cur_token:
             self.compile_var_dec('classVarDec')
         while 'constructor' in self.cur_token \
                 or 'function' in self.cur_token \
                 or 'method' in self.cur_token:
-            self.not_written_yet()  # keep the keyword
             self.compile_subroutinedec()
+        self.mix_two()
+        self.write_second_tag('class')
 
     def compile_var_dec(self, tagname):
-        print('we are in compile var_dec')
         self.write_tag(tagname)
         while ';' not in self.cur_token:
-            #self.not_written_yet()
             self.write_next_token()
             self.not_written_yet()
         self.write_next_token()
@@ -51,23 +49,19 @@ class CompilationEngine:
         self.write_next_token()    # keyword cons, method or func
         self.write_next_token()    # type
         self.write_next_token()    # identifier subroutineName
-        self.write_next_token()    # (, now self.token is either ) or type param
-        self.not_written_yet()     # go to next token, written is false
-        if ')' not in self.cur_token:
-            self.compile_parameter_list()
-        self.write_next_token()    # write ')'
-        self.not_written_yet()     # go to the first element in subroutineBody
+        self.mix_two()             # write ( and get next
+        self.compile_parameter_list()
+        self.mix_two()
         self.write_tag('subroutineBody')
-        self.write_next_token()    # write '{'
-        self.not_written_yet()     # cur_token is var if var exists
+        self.mix_two()
         while 'var' in self.cur_token:
             self.compile_var_dec('varDec')  # after this step, we get first word of statement as cur_token
         self.compile_statements()           # when enter this step, cut_token is first element of statements
+        self.mix_two()
         self.write_second_tag('subroutineBody')
         self.write_second_tag('subroutineDec')
 
     def compile_parameter_list(self):
-        print('we are in param list')
         self.write_tag('parameterList')
         while ')' not in self.cur_token:
             self.write_next_token()
@@ -92,80 +86,67 @@ class CompilationEngine:
                 self.compile_do_statement()
             elif 'return' in self.cur_token:
                 self.compile_return_statement()
+        self.write_second_tag('statements')
 
     def compile_let_statement(self):
         self.write_tag('letStatement')
-        self.write_next_token()  # write let
-        self.not_written_yet()   # cur_token is varName
-        self.write_next_token()  # write varName
-        self.not_written_yet()   # cur_token is '[' or '='
+        self.write_next_token()
+        self.mix_two()
         if '[' in self.cur_token:
-            self.write_next_token()  # write '['
-            self.not_written_yet()   # cur_token is first element in expression
+            self.mix_two()
             self.compile_expressions()
             self.write_next_token()  # write ']'
-        self.write_next_token()
+        self.mix_two()
         self.compile_expressions()
-        self.write_next_token()
+        self.mix_two()
         self.write_second_tag('letStatement')
 
     def compile_if_statement(self):
         self.write_tag('ifStatement')
-        self.not_written_yet()
-        self.write_next_token()  # write if
-        self.write_next_token()
+        self.write_next_token()   # write if and get '('
+        self.mix_two()
         self.compile_expressions()
-        self.write_next_token()
-        self.write_next_token()
+        self.write_next_token()   # write ')'
+        self.mix_two()
         self.compile_statements()
-        self.write_next_token()
+        self.mix_two()
         if 'else' in self.cur_token:
-            self.not_written_yet()
-            self.write_next_token()
-            self.write_next_token()
+            self.write_next_token()   # write else
+            self.mix_two()
             self.compile_statements()
-            self.write_next_token()
+            self.mix_two()
         self.write_second_tag('ifStatement')
 
     def compile_while_statement(self):
         self.write_tag('whileStatement')
-        self.not_written_yet()
-        self.write_next_token()  # write while
-        self.write_next_token()
+        self.write_next_token()   # write while
+        self.mix_two()
         self.compile_expressions()
-        self.write_next_token()
-        self.write_next_token()
+        self.write_next_token()   # write )
+        self.mix_two()
         self.compile_statements()
-        self.write_next_token()
+        self.mix_two()
         self.write_second_tag('whileStatement')
 
     def compile_do_statement(self):
         self.write_tag('doStatement')
-        self.not_written_yet()
         self.write_next_token()  # do
-        self.write_next_token()  # subroutineName or varName
-        self.not_written_yet()
+        self.mix_two()
         if '.' in self.cur_token:
-            self.write_next_token()
-            self.write_next_token()  # subroutineName
-            self.write_next_token()  # '('
-            self.compile_expression_list()
-            self.write_next_token()
-        else:
-            self.write_next_token()
-            self.compile_expression_list()
-            self.write_next_token()
-        self.write_next_token()
+            self.write_next_token()  # write '.', true
+            self.write_next_token()  # get and write subroutineName
+        self.mix_two()
+        self.compile_expression_list()
+        self.write_next_token()      # write )
+        self.mix_two()               # write ;
         self.write_second_tag('doStatement')
 
     def compile_return_statement(self):
         self.write_tag('returnStatement')
-        self.not_written_yet()
-        self.write_next_token()  # return
+        self.mix_two()
         if ';' not in self.cur_token:
-            self.not_written_yet()
             self.compile_expressions()
-        self.write_next_token()
+        self.mix_two()
         self.write_second_tag('returnStatement')
 
     """
@@ -175,8 +156,7 @@ class CompilationEngine:
         self.write_tag('expression')
         self.compile_term()
         while re.search(r'> (\+|-|\*|/|&amp;|\||&lt;|&gt;|=) <', self.cur_token):
-            self.not_written_yet()
-            self.write_next_token()
+            self.mix_two()
             self.compile_term()
         self.write_second_tag('expression')
 
@@ -190,41 +170,38 @@ class CompilationEngine:
     """
     def compile_term(self):
         self.write_tag('term')
-        self.not_written_yet()
         if re.search(r'> (~|-) <', self.cur_token):
-            self.write_next_token()  # deal with unary op
+            self.mix_two()
             self.compile_term()
         elif '(' in self.cur_token:
-            self.write_next_token()   # '('
+            self.mix_two()
             self.compile_expressions()
-            self.write_next_token()
+            self.mix_two()
         else:
-            self.write_next_token()
-            self.not_written_yet()
+            self.mix_two()
             if '[' in self.cur_token:
-                self.write_next_token()
+                self.mix_two()
                 self.compile_expressions()
-                self.write_next_token()  # write ']'
+                self.mix_two()
             elif '.' in self.cur_token:
-                self.write_next_token()
-                self.write_next_token()  # subroutineName
-                self.write_next_token()  # '('
+                self.write_next_token()  # write '.', true
+                self.write_next_token()  # get and write subroutineName
+                self.mix_two()
                 self.compile_expression_list()
-                self.write_next_token()
-            else:
-                self.write_next_token()
+                self.mix_two()
+            elif '(' in self.cur_token:
+                self.mix_two()
                 self.compile_expression_list()
-                self.write_next_token()
+                self.mix_two()
         self.write_second_tag('term')
 
     def compile_expression_list(self):
         self.write_tag('expressionList')
-        self.not_written_yet()
+        self.not_written_yet()    # get the first element of expression list
         if ')' not in self.cur_token:   # meaning expression list is not empty
             self.compile_expressions()  #TODO find out if it really goes to next token
         while ')' not in self.cur_token:
-            self.not_written_yet()
-            self.write_next_token()
+            self.mix_two()
             self.compile_expressions()
         self.write_second_tag('expressionList')
 
@@ -239,7 +216,7 @@ class CompilationEngine:
         self.xml_writer.write(syntax)
 
     def write_indent(self):
-        return '\t' * self.indent_count
+        return '  ' * self.indent_count
 
     """
     write current token into xml_writer,
@@ -259,6 +236,10 @@ class CompilationEngine:
         if self.written:
             self.cur_token = self.txml_reader.readline()
         self.written = False
+
+    def mix_two(self):
+        self.write_next_token()
+        self.not_written_yet()
 
 
 if __name__ == '__main__':
