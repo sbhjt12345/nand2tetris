@@ -8,10 +8,11 @@ class CompilationEngine:
     def __init__(self, filepath):
         try:
             self.filepath = filepath
-            self.txml_reader = open(filepath, 'r')
+            self.txml_output = filepath.replace('.jack', 'T.xml')
+            self.txml_reader = open(self.txml_output, 'r')
             self.cur_token = self.txml_reader.readline()   # omit <token>
             self.written = True
-            self.output = filepath.replace('T.xml', 'M.xml')
+            self.output = filepath.replace('.jack', '.xml')
             self.indent_count = 0
             self.xml_writer = open(self.output, 'w')
             self.compile_class()
@@ -44,7 +45,6 @@ class CompilationEngine:
         self.write_second_tag(tagname)
 
     def compile_subroutinedec(self):
-        print('we are in subroutine dec')
         self.write_tag('subroutineDec')
         self.write_next_token()    # keyword cons, method or func
         self.write_next_token()    # type
@@ -69,7 +69,6 @@ class CompilationEngine:
         self.write_second_tag('parameterList')
 
     def compile_statements(self):
-        print('we are in statements')
         self.write_tag('statements')
         while 'let' in self.cur_token \
                 or 'if' in self.cur_token \
@@ -229,7 +228,6 @@ class CompilationEngine:
             self.cur_token = self.txml_reader.readline()
         else:
             self.written = True
-        print(self.cur_token)
         self.xml_writer.write(self.write_indent() + self.cur_token)
 
     def not_written_yet(self):

@@ -69,7 +69,7 @@ class JackTokenizer:
             line = line[len(word):].strip()
 
     def output_t_xml(self):
-        txml = self.filepath.replace('.jack', 'T2.xml')
+        txml = self.filepath.replace('.jack', 'T.xml')
         special_symbol_map = {
             '<': '&lt;',
             '>': '&gt;',

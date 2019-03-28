@@ -71,6 +71,8 @@
 <identifier> s </identifier>
 <symbol> = </symbol>
 <stringConstant> string constant </stringConstant>
+<identifier> t </identifier>
+<identifier> &quot; </identifier>
 <symbol> ; </symbol>
 <keyword> let </keyword>
 <identifier> s </identifier>
