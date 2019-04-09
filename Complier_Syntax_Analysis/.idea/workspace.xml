@@ -3,26 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a21e0df5-98ec-4c43-8e00-ae1af3dab2e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../06/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayTest/Main.jack" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayTest/Main.jack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayTest/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayTest/Main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrayTest/MainT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayTest/MainT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompilationEngine.py" beforeDir="false" afterPath="$PROJECT_DIR$/CompilationEngine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/Main.jack" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/Main.jack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/Main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/MainT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/MainT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/Square.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/Square.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/SquareGame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/SquareGame.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/SquareGameT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/SquareGameT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExpressionLessSquare/SquareT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpressionLessSquare/SquareT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JackTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/JackTokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/Main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/MainT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/MainT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/Square.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/Square.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareGame.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/SquareGame.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareGameT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/SquareGameT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareM.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Square/SquareT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Square/SquareT2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,55 +15,69 @@
     <session id="1556280886">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="1093" />
-          <entry key="py" value="12542" />
+          <entry key="py" value="22276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="13635" />
+          <entry key="Python" value="23369" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+            <state>
+              <caret selection-end-line="3" selection-end-column="10" />
               <folding>
                 <element signature="e#20#47#0" expanded="true" />
-                <marker date="1553738225153" expanded="true" signature="85:90" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="1335:1628" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="1660:1669" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="3850:3856" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="5285:5505" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="5623:5842" ph="..." />
-                <marker date="1553738225153" expanded="true" signature="7611:7616" ph="..." />
+                <marker date="1554276261067" expanded="true" signature="85:90" ph="..." />
+                <marker date="1554276261067" expanded="true" signature="1335:1628" ph="..." />
+                <marker date="1554276261067" expanded="true" signature="1660:1669" ph="..." />
+                <marker date="1554276261067" expanded="true" signature="3850:3856" ph="..." />
+                <marker date="1554276261067" expanded="true" signature="5285:5505" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SymbolTable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding>
+                <element signature="e#20#47#0" expanded="true" />
+                <marker date="1554801470671" expanded="true" signature="201:206" ph="..." />
+                <marker date="1554801470671" expanded="true" signature="743:782" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JackAnalyzer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -94,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="1440">
               <caret line="97" column="9" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="9" />
               <folding>
                 <element signature="e#20#29#0" expanded="true" />
@@ -128,14 +123,15 @@
       <list>
         <option value="$PROJECT_DIR$/JackTokenizer.py" />
         <option value="$PROJECT_DIR$/Square/JackAnalyzer.py" />
-        <option value="$PROJECT_DIR$/CompilationEngine.py" />
         <option value="$PROJECT_DIR$/JackAnalyzer.py" />
+        <option value="$PROJECT_DIR$/CompilationEngine.py" />
+        <option value="$PROJECT_DIR$/SymbolTable.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="202" />
-    <option name="y" value="27" />
+    <option name="x" value="208" />
+    <option name="y" value="228" />
     <option name="width" value="1284" />
     <option name="height" value="800" />
   </component>
@@ -147,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +154,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -187,16 +183,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="202" y="27" width="1284" height="800" extended-state="0" />
+    <frame x="208" y="228" width="1284" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" visible="true" weight="0.3211679" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32658958" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -204,6 +196,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32658958" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3211679" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -213,36 +209,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Square/JackAnalyzer.py">
+    <entry file="file://$PROJECT_DIR$/Square/JackAnalyzer.py" />
+    <entry file="file://$PROJECT_DIR$/JackAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#20#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding>
-            <element signature="e#20#47#0" expanded="true" />
-            <marker date="1553738225153" expanded="true" signature="85:90" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="1335:1628" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="1660:1669" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="3850:3856" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="5285:5505" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="5623:5842" ph="..." />
-            <marker date="1553738225153" expanded="true" signature="7611:7616" ph="..." />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JackTokenizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="1440">
           <caret line="97" column="9" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="9" />
           <folding>
             <element signature="e#20#29#0" expanded="true" />
@@ -252,10 +229,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JackAnalyzer.py">
+    <entry file="file://$PROJECT_DIR$/CompilationEngine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="10" />
+          <folding>
+            <element signature="e#20#47#0" expanded="true" />
+            <marker date="1554276261067" expanded="true" signature="85:90" ph="..." />
+            <marker date="1554276261067" expanded="true" signature="1335:1628" ph="..." />
+            <marker date="1554276261067" expanded="true" signature="1660:1669" ph="..." />
+            <marker date="1554276261067" expanded="true" signature="3850:3856" ph="..." />
+            <marker date="1554276261067" expanded="true" signature="5285:5505" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SymbolTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="e#20#47#0" expanded="true" />
+            <marker date="1554801470671" expanded="true" signature="201:206" ph="..." />
+            <marker date="1554801470671" expanded="true" signature="743:782" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
